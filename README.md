@@ -31,6 +31,7 @@ source ~/ros2_ws/install/setup.bash
 ``` r
 ros2 launch zse_exn_ajr MitsuLaunch.launch.py
 ```
+![Képernyőkép 2024-10-11 195027](https://github.com/user-attachments/assets/8b8b0280-7148-4c14-96de-bbafa944fe0d)
 
 ```mermaid
 graph TD;
