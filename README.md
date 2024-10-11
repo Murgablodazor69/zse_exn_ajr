@@ -34,6 +34,6 @@ ros2 launch zse_exn_ajr MitsuLaunch.launch.py
 
 ```mermaid
 graph TD;
-    Mitsu-->cmd_msg;
-    cmd_msg-->turtlesim;
+    Mitsu-->/turtle1/cmd_vel;
+    /turtle1/cmd_vel-->turtlesim;
 ```
