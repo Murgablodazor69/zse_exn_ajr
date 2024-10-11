@@ -1,17 +1,19 @@
 from launch import LaunchDescription
 from launch_ros.actions import Node
+from launch.actions import TimerAction
 
 def generate_launch_description():
     return LaunchDescription([
+        # Launch Mitsu node first
         Node(
-            package='turtlesim',
-            namespace='turtle1',
-            executable='turtlesim_node',
-            name='sim',
-        ),
-        Node(
-            package='zse_exn_arj',
+            package='zse_exn_ajr',
             executable='Mitsu',
             output='screen',
         ),
+
+            Node(
+                package='turtlesim',
+                executable='turtlesim_node',
+                name='turtlesim'
+            ),
     ])

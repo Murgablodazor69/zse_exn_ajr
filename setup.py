@@ -16,6 +16,7 @@ setup(
     ],
     install_requires=['setuptools'],
     zip_safe=True,
+    py_modules=['Mitsu'],
     maintainer='todo',
     maintainer_email='todo@todo.com',
     description='TODO: Package description',
@@ -23,7 +24,8 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            # 'control_vehicle = zse_exn_ajr.control_vehicle:main',
+            'control_vehicle = zse_exn_ajr.control_vehicle:main',
+            'Mitsu=Mitsu:main',
         ],
     },
 )
