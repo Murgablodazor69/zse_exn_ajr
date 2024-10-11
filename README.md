@@ -29,5 +29,11 @@ source ~/ros2_ws/install/setup.bash
 </details>
 
 ``` r
-ros2 launch zse_exn_ajr launch_example1.launch.py
+ros2 launch zse_exn_ajr MitsuLaunch.launch.py
+```
+
+```mermaid
+graph TD;
+    Mitsu-->cmd_msg;
+    cmd_msg-->turtlesim;
 ```
